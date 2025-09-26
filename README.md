@@ -15,7 +15,7 @@ O objetivo é praticar **UI design no Flutter**, organizar widgets reutilizávei
 
 > (Como a aplicação ficou de acordo com a referência)
 
-![Aplicação Flutter](Captura%de%tela%25-9-2025%234414_localhost.jpeg)
+![Aplicação Flutter](Captura%de%tela_25-9-2025_234414_localhost.jpeg)
 
 ---
 
