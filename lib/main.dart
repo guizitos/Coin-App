@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter/foundation.dart'; // para usar kReleaseMode
+import 'package:flutter/foundation.dart'; 
 
 void main() {
   runApp(
     DevicePreview(
-      enabled: !kReleaseMode, // só ativa no debug, desativa em release
+      enabled: !kReleaseMode, 
       builder: (context) => const MyApp(),
     ),
   );
@@ -18,12 +18,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Coin App',
-      useInheritedMediaQuery: true, // importante para DevicePreview
+      useInheritedMediaQuery: true, 
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6C63FF), // Cor mais próxima do app Coin
+          seedColor: const Color(0xFF6C63FF), 
           brightness: Brightness.light,
         ),
         scaffoldBackgroundColor: const Color(0xFFF8F9FA),
@@ -47,7 +47,6 @@ class CoinHomePage extends StatefulWidget {
 }
 
 class _CoinHomePageState extends State<CoinHomePage> {
-  // Dados de exemplo baseados na imagem
   final double currentBalance = 2480.35;
   final String userName = "Alex Blossom";
   
@@ -197,7 +196,6 @@ class _CoinHomePageState extends State<CoinHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Adicionar nova transação
         },
         backgroundColor: const Color(0xFF6C63FF),
         child: const Icon(Icons.add, color: Colors.white),
@@ -244,7 +242,7 @@ class TransactionCard extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Ícone do estabelecimento (simplificado)
+          // Ícone do estabelecimento
           Container(
             width: 40,
             height: 40,
@@ -298,4 +296,5 @@ class TransactionCard extends StatelessWidget {
       ),
     );
   }
+
 }
